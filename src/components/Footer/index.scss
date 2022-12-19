@@ -1,0 +1,69 @@
+@import "../../assets/styles/colors.scss";
+
+.footer {
+  background-color: black;
+  display: flex;
+  padding: 24px 72px;
+
+  &__inner-container {
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    p {
+      color: $dark-grey50;
+    }
+  }
+
+  &__right {
+    a:last-of-type {
+      svg {
+        margin-right: 0;
+      }
+    }
+  }
+
+  svg {
+    margin-left: 16px;
+    margin-right: 16px;
+
+    path {
+      fill: $dark-grey50;
+    }
+
+    &:hover {
+      path {
+        fill: $white;
+      }
+    }
+  }
+}
+
+@media (max-width: 1039px) {
+  .footer {
+    &__inner-container {
+      flex-wrap: wrap-reverse;
+    }
+
+    &__left {
+      justify-content: center;
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    &__right {
+      justify-content: space-between;
+      display: flex;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1039px) {
+  .footer {
+    padding: 24px;
+  }
+}

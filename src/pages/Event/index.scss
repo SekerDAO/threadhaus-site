@@ -1,0 +1,89 @@
+@import "../../assets/styles/colors.scss";
+
+.event-page {
+  margin-bottom: 48px;
+  min-height: calc(100vh - 219px);
+}
+
+.event {
+  &__link {
+    margin-top: 86px;
+
+    a {
+      color: $purple;
+    }
+  }
+
+  &__title {
+    margin: 48px 0;
+
+    h3 {
+      color: $light-green;
+    }
+  }
+
+  &__content {
+    p {
+      color: $dark-grey;
+    }
+  }
+
+  &__image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+    margin-right: 20px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+
+    > div,
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__mint {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+    h3 {
+      color: $dark-grey;
+    }
+
+    input {
+      margin: 10px 0;
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .event-page {
+    padding: 44px 36px;
+  }
+
+  .event {
+    &__image {
+      margin-right: 0;
+    }
+
+    &__mint {
+      padding-left: 0;
+    }
+  }
+}

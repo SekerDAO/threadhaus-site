@@ -1,0 +1,69 @@
+@import "../../assets/styles/colors.scss";
+
+.modal {
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__image-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  &__image-body {
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    max-width: 100%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__body {
+    width: 600px;
+    max-width: 100%;
+    background-color: $light-grey;
+    padding: 20px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &__close {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-right: -20px;
+  }
+}
+
+@media screen and (max-height: 660px), screen and (max-width: 600px) {
+  .modal {
+    &__body {
+      transform: none;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

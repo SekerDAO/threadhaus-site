@@ -1,0 +1,122 @@
+@import "assets/styles/colors.scss";
+
+@font-face {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/Karla-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: KarlaBold;
+  src: url("assets/fonts/Karla-Bold.ttf");
+}
+
+@font-face {
+  font-family: SairaSemiCondensed;
+  font-style: normal;
+  font-weight: 600;
+  src: url("assets/fonts/SairaSemiCondensed-SemiBold.ttf");
+  font-display: swap;
+}
+
+html {
+  font-size: 10px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Karla, "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark-grey;
+  background-color: white;
+}
+
+h1 {
+  font-family: SairaSemiCondensed, "Open Sans", sans-serif;
+  display: block;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: $white;
+  text-align: left;
+}
+
+h2 {
+  font-family: SairaSemiCondensed, "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  color: $white;
+  font-weight: 600;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h3 {
+  font-family: SairaSemiCondensed, "Open Sans", sans-serif;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: $white;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $white;
+}
+
+a,
+a:hover {
+  transition: all 0.4s ease-in-out;
+}
+
+p {
+  margin: 0;
+  color: $white;
+}
+
+.bold {
+  font-weight: bold;
+  font-family: SairaSemiCondensed, "Open Sans", sans-serif;
+}
+
+.karla-bold {
+  font-weight: bold;
+  font-family: KarlaBold, "Open Sans", sans-serif;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: normal;
+  font-family: Karla, "Open Sans", sans-serif;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.carousel {
+  .slide {
+    text-align: left;
+
+    .event-list-item {
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../assets/styles/colors.scss";
+
+.subscribe {
+  padding: 80px 36px;
+  background-color: $white;
+  max-height: 500px;
+  width: 100%;
+  transition: all 0.5s ease-in;
+
+  h1 {
+    color: $dark-grey;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  &__input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+
+    .input {
+      width: 280px;
+
+      &__wrapper,
+      &__field {
+        width: 100%;
+      }
+    }
+
+    .btn {
+      margin-left: 20px;
+    }
+  }
+
+  &__error {
+    width: 100%;
+    color: $error;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  &__success-message {
+    text-align: center;
+    margin-top: 20px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 36px;
+      color: $dark-grey;
+    }
+
+    p {
+      color: $dark-grey;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .subscribe {
+    &__input-container {
+      align-items: center;
+
+      .input {
+        width: 180px;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "src/assets/styles/colors.scss";
+
+.btn {
+  font-family: Karla, "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #7BBF33;
+  border-radius: 5px;
+  height: 40px;
+
+  &:disabled {
+    background-color: $dark-grey75;
+    border-color: $dark-grey75;
+    color: $dark-grey50;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):hover {
+    background-color: $purple;
+    border-color: $purple;
+    color: $white;
+  }
+
+  &--primary {
+    color: $white;
+    background-color: #7BBF33;
+  }
+
+  &--primary.btn--white {
+    background-color: $white;
+    color: $dark-grey;
+    border-color: $white;
+  }
+
+  &--secondary {
+    color: $purple;
+    background-color: transparent;
+  }
+
+  &--secondary.btn--white {
+    color: $white;
+    border-color: $white;
+
+    &:hover {
+      background-color: $white;
+      border-color: $white;
+      color: $dark-grey;
+    }
+  }
+
+  &--link {
+    color: $purple;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid $purple;
+    border-radius: 0;
+
+    &:not(:disabled):hover {
+      background-color: transparent;
+      color: $purple75;
+    }
+
+    &:disabled {
+      background-color: transparent;
+    }
+  }
+}
